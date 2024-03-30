@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    td {
+        font-size: 400px;
+        color: aliceblue;
+        border: black;
+        font: xxx-large;
+    }
+
+    body {
+        background-image: url('BackGround_level1.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+</style>
+<body>
+<center>
+    <table>
+        <tr>
+            <td id="gameOverText1">Score :</td>
+            <td id='gameScore'> 0</td>
+        </tr>
+        <tr>
+            <td id = 'gameOverText2'>
+                Level :
+            </td>
+            <td id='gameLevel'>
+                1
+            </td>
+        </tr>
+    </table>
+</center>
+
+<img src="duck.png" id="duck"
+     style="position: absolute" onmouseover="duck.getSlash(); "/>
+<img src="CauVang.png" id="dog"
+     style="position: absolute; left : 0;bottom: 0" onmouseover="dog.getSlash()"/>
+<img src="Bomb.png" id="Bomb"
+     style="position: absolute" onmouseover="bomb.getSlash()"/>
+
+<script>
+
+
+</script>
+<script src="node_modules/howler/src/howler.core.js"></script>
+<script src="node_modules/howler/dist/howler.js"></script>
+<script src="javaSC/Bomb.js"></script>
+<script src="javaSC/animal.js"></script>
+<script src="javaSC/GameManager.js"></script>
+<script src="javaSC/main.js"></script>
+</body>
+</html>
