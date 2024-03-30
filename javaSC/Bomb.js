@@ -22,6 +22,7 @@ class Bomb {
             if (parseInt(this.Object.style.top) < window.innerHeight * Math.random() / 4) {
                 this.Direction = 'down';
             }
+            // hello
         } else if (this.Direction === 'down') {
             this.moveDown();
             if (parseInt(this.Object.style.top) > window.innerHeight) {
